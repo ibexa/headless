@@ -1,8 +1,8 @@
 {
-    "name": "ibexa/content",
+    "name": "ibexa/headless",
     "type": "metapackage",
     "license": "proprietary",
-    "description": "A meta package for installing Ibexa DXP Content edition",
+    "description": "A meta package for installing Ibexa DXP Headless edition",
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": [
