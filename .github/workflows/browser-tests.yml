@@ -15,7 +15,7 @@ on:
 
 jobs:
     regression-headless-setup1:
-        name: "PHP 7.4/Node 14/PostgreSQL/Varnish/Redis/Multirepository"
+        name: "PHP 7.4/Node 18/PostgreSQL/Varnish/Redis/Multirepository"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "headless"
@@ -27,7 +27,7 @@ jobs:
             multirepository: true
             job-count: 2
             timeout: 90
-            php-image: "ezsystems/php:7.4-v2-node14"
+            php-image: "ghcr.io/ibexa/docker/php:7.4-node18"
         secrets:
             SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
             SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
