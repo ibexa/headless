@@ -7,7 +7,7 @@ Learn more about [Ibexa DXP](https://www.ibexa.co/products).
 
 ## Installation
 
-To install the latest version of Ibexa Content, follow the [installation guide](https://doc.ibexa.co/en/latest/getting_started/install_ez_platform/).
+To install the latest version of Ibexa Headless, follow the [installation guide](https://doc.ibexa.co/en/latest/getting_started/install_ez_platform/).
 
 ## COPYRIGHT
 Copyright (C) 1999-2023 Ibexa AS (formerly eZ Systems AS). All rights reserved.
