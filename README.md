@@ -1,16 +1,16 @@
-# Ibexa DXP Content Symfony Flex metapackage
+# Ibexa DXP Headless Symfony Flex metapackage
 
-This is a metapackage for Symfony Flex-based Ibexa DXP Content installation. 
+This is a metapackage for Symfony Flex-based Ibexa DXP Headless installation. 
 It requires a subscription.
 
 Learn more about [Ibexa DXP](https://www.ibexa.co/products).
 
 ## Installation
 
-To install the latest version of Ibexa Content, follow the [installation guide](https://doc.ibexa.co/en/latest/getting_started/install_ez_platform/).
+To install the latest version of Ibexa Headless, follow the [installation guide](https://doc.ibexa.co/en/latest/getting_started/install_ez_platform/).
 
 ## COPYRIGHT
-Copyright (C) 1999-2020 Ibexa AS (formerly eZ Systems AS). All rights reserved.
+Copyright (C) 1999-2023 Ibexa AS (formerly eZ Systems AS). All rights reserved.
 
 ## LICENSE
 This source code is available separately under the following licenses:
