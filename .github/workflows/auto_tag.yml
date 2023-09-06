@@ -140,7 +140,7 @@ jobs:
         if: github.event.repository.name == 'oss'
         run: jq '.require["ibexa/admin-ui-assets"] |= "${{ inputs.version }}"' composer.json | sponge composer.json
       - name: Patch parent version for Content
-        if: github.event.repository.name == 'content'
+        if: github.event.repository.name == 'headless'
         run: jq '.require["ibexa/oss"] |= "${{ inputs.version }}"' composer.json | sponge composer.json
       - name: Patch parent version for Experience
         if: github.event.repository.name == 'experience'
