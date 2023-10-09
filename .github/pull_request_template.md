@@ -1,8 +1,8 @@
 | Question                                  | Answer
 | ---------------------------------------- | ------------------
-| **JIRA issue**                          | EZEE-XXXXX
+| **JIRA issue**                          | IBX-XXXXX
 | **Type**                                   | feature/bug/improvement
-| **Target Ibexa version** | `v3.x` - please update `x` accordingly
+| **Target Ibexa version** | `v4.6` - please update `x` accordingly
 | **BC breaks**                          | yes/no
 | **Doc needed**                       | yes/no
 
