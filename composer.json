@@ -32,6 +32,7 @@
         "ibexa/tree-builder": "~4.6.x-dev",
         "ibexa/content-tree": "~4.6.x-dev",
         "ibexa/image-picker": "~4.6.x-dev",
+        "ibexa/site-context": "~4.6.x-dev",
         "gregwar/captcha-bundle": "^2.1"
     },
     "require-dev": {
