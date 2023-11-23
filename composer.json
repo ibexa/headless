@@ -3,36 +3,37 @@
     "type": "metapackage",
     "license": "proprietary",
     "description": "A meta package for installing Ibexa DXP Headless edition",
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "repositories": [
-        {"type": "composer", "url": "https://updates.ibexa.co"}
+        {
+            "type": "composer",
+            "url": "https://updates.ibexa.co"
+        }
     ],
     "require": {
         "php": "^7.4 || ^8.0",
-        "ibexa/oss": "~4.6.x-dev",
-        "ibexa/connect": "~4.6.x-dev",
-        "ibexa/measurement": "~4.6.x-dev",
-        "ibexa/migrations": "~4.6.x-dev",
-        "ibexa/image-editor": "~4.6.x-dev",
-        "ibexa/oauth2-client": "~4.6.x-dev",
-        "ibexa/installer": "~4.6.x-dev",
-        "ibexa/product-catalog": "~4.6.x-dev",
-        "ibexa/seo": "~4.6.x-dev",
-        "ibexa/scheduler": "~4.6.x-dev",
-        "ibexa/calendar": "~4.6.x-dev",
-        "ibexa/connector-dam": "~4.6.x-dev",
-        "ibexa/elasticsearch": "~4.6.x-dev",
-        "ibexa/fastly": "~4.6.x-dev",
-        "ibexa/icons": "~4.6.x-dev",
-        "ibexa/personalization": "~4.6.x-dev",
-        "ibexa/version-comparison": "~4.6.x-dev",
-        "ibexa/workflow": "~4.6.x-dev",
-        "ibexa/taxonomy": "~4.6.x-dev",
-        "ibexa/tree-builder": "~4.6.x-dev",
-        "ibexa/content-tree": "~4.6.x-dev",
-        "ibexa/image-picker": "~4.6.x-dev",
-        "ibexa/site-context": "~4.6.x-dev",
+        "ibexa/oss": "4.6.0-beta3",
+        "ibexa/connect": "4.6.0-beta3",
+        "ibexa/measurement": "4.6.0-beta3",
+        "ibexa/migrations": "4.6.0-beta3",
+        "ibexa/image-editor": "4.6.0-beta3",
+        "ibexa/oauth2-client": "4.6.0-beta3",
+        "ibexa/installer": "4.6.0-beta3",
+        "ibexa/product-catalog": "4.6.0-beta3",
+        "ibexa/seo": "4.6.0-beta3",
+        "ibexa/scheduler": "4.6.0-beta3",
+        "ibexa/calendar": "4.6.0-beta3",
+        "ibexa/connector-dam": "4.6.0-beta3",
+        "ibexa/elasticsearch": "4.6.0-beta3",
+        "ibexa/fastly": "4.6.0-beta3",
+        "ibexa/icons": "4.6.0-beta3",
+        "ibexa/personalization": "4.6.0-beta3",
+        "ibexa/version-comparison": "4.6.0-beta3",
+        "ibexa/workflow": "4.6.0-beta3",
+        "ibexa/taxonomy": "4.6.0-beta3",
+        "ibexa/tree-builder": "4.6.0-beta3",
+        "ibexa/content-tree": "4.6.0-beta3",
+        "ibexa/image-picker": "4.6.0-beta3",
+        "ibexa/site-context": "4.6.0-beta3",
         "gregwar/captcha-bundle": "^2.1"
     },
     "require-dev": {
@@ -42,5 +43,7 @@
         "branch-alias": {
             "dev-master": "4.6.x-dev"
         }
-    }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "beta"
 }
