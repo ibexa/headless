@@ -8,6 +8,9 @@
     "repositories": [
         {"type": "composer", "url": "https://updates.ibexa.co"}
     ],
+    "replace": {
+        "ibexa/content": "*"
+    },
     "require": {
         "php": "^7.4 || ^8.0",
         "ibexa/oss": "~4.6.x-dev",
