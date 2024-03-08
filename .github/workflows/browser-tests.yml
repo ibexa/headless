@@ -19,19 +19,19 @@ on:
     pull_request: ~
 
 jobs:
-    regression-content-setup1:
-        name: "PHP 7.4/Node 14/PostgreSQL/Varnish/Redis/Multirepository"
+    regression-headless-setup1:
+        name: "PHP 7.4/Node 18/PostgreSQL/Varnish/Redis/Multirepository"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            project-edition: "content"
+            project-edition: "headless"
             project-version: ${{ github.event.inputs.project-version }}
-            test-suite: "--profile=regression --suite=content"
-            test-setup-phase-1: "--profile=regression --suite=setup-content --tags=~@part2 --mode=standard"
-            test-setup-phase-2: "--profile=regression --suite=setup-content --tags=@part2 --mode=standard"
+            test-suite: "--profile=regression --suite=headless"
+            test-setup-phase-1: "--profile=regression --suite=setup-headless --tags=~@part2 --mode=standard"
+            test-setup-phase-2: "--profile=regression --suite=setup-headless --tags=@part2 --mode=standard"
             setup: "doc/docker/base-dev.yml:doc/docker/db-postgresql.yml:doc/docker/varnish.yml:doc/docker/redis.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             multirepository: true
-            php-image: "ghcr.io/ibexa/docker/php:7.4-node14"
+            php-image: "ghcr.io/ibexa/docker/php:7.4-node18"
             job-count: 2
             timeout: 90
         secrets:
@@ -42,19 +42,19 @@ jobs:
             AUTOMATION_CLIENT_ID: ${{ secrets.AUTOMATION_CLIENT_ID }}
             AUTOMATION_CLIENT_INSTALLATION: ${{ secrets.AUTOMATION_CLIENT_INSTALLATION }}
             AUTOMATION_CLIENT_SECRET: ${{ secrets.AUTOMATION_CLIENT_SECRET }}
-    regression-content-setup2:
-        name: "PHP 8.0/Node 16/MySQL/Compatibility layer/Elastic"
+    regression-headless-setup2:
+        name: "PHP 8.0/Node 18/MySQL/Compatibility layer/Elastic"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            project-edition: "content"
+            project-edition: "headless"
             project-version: ${{ github.event.inputs.project-version }}
-            test-suite: "--profile=regression --suite=content"
-            test-setup-phase-1: "--profile=regression --suite=setup-content --tags=~@part2 --mode=standard"
-            test-setup-phase-2: "--profile=regression --suite=setup-content --tags=@part2 --mode=standard"
+            test-suite: "--profile=regression --suite=headless"
+            test-setup-phase-1: "--profile=regression --suite=setup-headless --tags=~@part2 --mode=standard"
+            test-setup-phase-2: "--profile=regression --suite=setup-headless --tags=@part2 --mode=standard"
             setup: "doc/docker/base-dev.yml:doc/docker/elastic.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             use-compatibility-layer: true
-            php-image: "ghcr.io/ibexa/docker/php:8.0-node16"
+            php-image: "ghcr.io/ibexa/docker/php:8.0-node18"
             job-count: 2
             timeout: 90
         secrets:
@@ -65,15 +65,15 @@ jobs:
             AUTOMATION_CLIENT_ID: ${{ secrets.AUTOMATION_CLIENT_ID }}
             AUTOMATION_CLIENT_INSTALLATION: ${{ secrets.AUTOMATION_CLIENT_INSTALLATION }}
             AUTOMATION_CLIENT_SECRET: ${{ secrets.AUTOMATION_CLIENT_SECRET }}
-    regression-content-setup3:
+    regression-headless-setup3:
         name: "PHP 8.2/Node 18/MySQL/Compatibility layer/Solr"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
-            project-edition: "content"
+            project-edition: "headless"
             project-version: ${{ github.event.inputs.project-version }}
-            test-suite: "--profile=regression --suite=content"
-            test-setup-phase-1: "--profile=regression --suite=setup-content --tags=~@part2 --mode=standard"
-            test-setup-phase-2: "--profile=regression --suite=setup-content --tags=@part2 --mode=standard"
+            test-suite: "--profile=regression --suite=headless"
+            test-setup-phase-1: "--profile=regression --suite=setup-headless --tags=~@part2 --mode=standard"
+            test-setup-phase-2: "--profile=regression --suite=setup-headless --tags=@part2 --mode=standard"
             setup: "doc/docker/base-dev.yml:doc/docker/solr.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             use-compatibility-layer: true
