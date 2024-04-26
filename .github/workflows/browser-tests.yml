@@ -31,7 +31,6 @@ jobs:
             setup: "doc/docker/base-dev.yml:doc/docker/db-postgresql.yml:doc/docker/varnish.yml:doc/docker/redis.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             multirepository: true
-            php-image: "ghcr.io/ibexa/docker/php:7.4-node18"
             job-count: 2
             timeout: 90
         secrets:
@@ -54,7 +53,6 @@ jobs:
             setup: "doc/docker/base-dev.yml:doc/docker/elastic.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             use-compatibility-layer: true
-            php-image: "ghcr.io/ibexa/docker/php:8.0-node18"
             job-count: 2
             timeout: 90
         secrets:
@@ -77,7 +75,6 @@ jobs:
             setup: "doc/docker/base-dev.yml:doc/docker/solr.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             use-compatibility-layer: true
-            php-image: "ghcr.io/ibexa/docker/php:8.2-node18"
             job-count: 2
             timeout: 90
         secrets:
