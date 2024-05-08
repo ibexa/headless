@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx-8107-added-new-user-with-create-permission as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/dam",
+            "package": null,
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}
