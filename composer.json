@@ -39,6 +39,8 @@
         "ibexa/content-tree": "~5.0.x-dev",
         "ibexa/image-picker": "~5.0.x-dev",
         "ibexa/site-context": "~5.0.x-dev",
+        "ibexa/headless-assets": "~5.0.0@alpha",
+        "ibexa/app-switcher": "~5.0.x-dev",
         "gregwar/captcha-bundle": "^2.1"
     },
     "require-dev": {
