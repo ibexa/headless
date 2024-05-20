@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "https://api.github.com/repos/ibexa/recipes-dev/contents/index.json?ref=flex/pull-117",
+    "packages": [
+        {
+            "requirement": "dev-IBX-8144 as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}
