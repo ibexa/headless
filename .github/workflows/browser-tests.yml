@@ -23,6 +23,7 @@ jobs:
         name: "PHP 8.3/Node 18/PostgreSQL/Varnish/Redis/Multirepository"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
+            ci-scripts-branch: ibx-9032-fu
             project-edition: "headless"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=headless"
@@ -46,6 +47,7 @@ jobs:
         name: "PHP 8.3/Node 18/MySQL/Elastic"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
+            ci-scripts-branch: ibx-9032-fu
             project-edition: "headless"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=headless"
@@ -68,6 +70,7 @@ jobs:
         name: "PHP 8.3/Node 18/MySQL/Solr"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
+            ci-scripts-branch: ibx-9032-fu
             project-edition: "headless"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=headless"
