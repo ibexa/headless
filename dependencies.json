@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx-8244-fixed-richtext-rendering as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/seo",
+            "package": "ibexa/seo",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}
