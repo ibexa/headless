@@ -19,8 +19,8 @@ on:
 
 jobs:
   preparation:
-    runs-on: ubuntu-22.04
-    # This should allow parallel runs in a chain, e.g. OSS->Headless->Experience->Commerce
+    runs-on: ubuntu-latest
+    # This should allow parallel runs in a chain, e.g. OSS->Content->Experience->Commerce
     # whilst allowing Satis to process
     timeout-minutes: 30
 
@@ -42,12 +42,12 @@ jobs:
       # select(.version == "${{ env.V_VERSION }}"): filters the array to only include objects where the version property is equal to the value of the environment variable V_VERSION.
 
       # No need to validate for oss version in satis
-      - name: Validate satis for headless version
+      - name: Validate satis for content version
         if: github.event.repository.name == 'experience'
         env:
           SATIS_NETWORK_KEY: ${{ secrets.SATIS_NETWORK_KEY }}
           SATIS_NETWORK_TOKEN: ${{ secrets.SATIS_NETWORK_TOKEN }}
-          PARENT: ibexa/headless
+          PARENT: ibexa/content
           V_VERSION: v${{ inputs.version }}
         run: |
           for EXPONENTIAL_BACKOFF in {1..10}; do
@@ -84,7 +84,7 @@ jobs:
       - name: Setup PHP Action
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 8.1
+          php-version: 8.3
           coverage: none
           extensions: pdo_sqlite, gd
           tools: cs2pr
@@ -97,7 +97,7 @@ jobs:
           installation_id: ${{ secrets.AUTOMATION_CLIENT_INSTALLATION }}
           private_key: ${{ secrets.AUTOMATION_CLIENT_SECRET }}
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           persist-credentials: false
 
@@ -140,11 +140,11 @@ jobs:
         if: github.event.repository.name == 'oss'
         run: jq '.require["ibexa/admin-ui-assets"] |= "${{ inputs.version }}"' composer.json | sponge composer.json
       - name: Patch parent version for Content
-        if: github.event.repository.name == 'headless'
+        if: github.event.repository.name == 'content'
         run: jq '.require["ibexa/oss"] |= "${{ inputs.version }}"' composer.json | sponge composer.json
       - name: Patch parent version for Experience
         if: github.event.repository.name == 'experience'
-        run: jq '.require["ibexa/headless"] |= "${{ inputs.version }}"' composer.json | sponge composer.json
+        run: jq '.require["ibexa/content"] |= "${{ inputs.version }}"' composer.json | sponge composer.json
       - name: Patch parent version for Commerce
         if: github.event.repository.name == 'commerce'
         run: jq '.require["ibexa/experience"] |= "${{ inputs.version }}"' composer.json | sponge composer.json
@@ -153,12 +153,12 @@ jobs:
       # if they exist, to update the values of the keys in the require object.
       - name: Patch composer require versions
         run: |
-          jq --argfile release release.json '
+          jq --slurpfile release <(cat release.json) '
             .require |= (
               to_entries | 
               map({
                 key: .key,
-                value: (if ($release[.key]) then $release[.key] else .value end)
+                value: (if ($release[0][.key]) then $release[0][.key] else .value end)
               }) | from_entries
             )
           ' composer.json > composer.tmp
