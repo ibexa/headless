@@ -15,7 +15,7 @@
         "ibexa/content": "*"
     },
     "require": {
-        "php": "^7.4 || ^8.0",
+        "php": ">=8.3",
         "ibexa/oss": "~5.0.x-dev",
         "ibexa/connect": "~5.0.x-dev",
         "ibexa/measurement": "~5.0.x-dev",
