@@ -20,7 +20,7 @@ on:
 jobs:
   preparation:
     runs-on: ubuntu-latest
-    # This should allow parallel runs in a chain, e.g. OSS->Content->Experience->Commerce
+    # This should allow parallel runs in a chain, e.g. OSS->Headless->Experience->Commerce
     # whilst allowing Satis to process
     timeout-minutes: 30
 
