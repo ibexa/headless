@@ -18,12 +18,6 @@
             "repositoryUrl": "https://github.com/ibexa/admin-ui",
             "package": "ibexa/admin-ui",
             "shouldBeAddedAsVCS": false
-        },
-        {
-            "requirement": "dev-image-headless-v5 as 5.0.x-dev",
-            "repositoryUrl": "https://github.com/ibexa/site-context",
-            "package": "ibexa/site-context",
-            "shouldBeAddedAsVCS": true
         }
     ]
 }
