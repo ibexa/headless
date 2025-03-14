@@ -25,12 +25,11 @@ jobs:
     timeout-minutes: 30
 
     steps:
-      - name: Check for admin-ui-assets tag
-        if: github.event.repository.name == 'oss'
+      - name: Check for headless-assets tag
         uses: octokit/request-action@v2.x
         with:
           owner: ibexa
-          repo: admin-ui-assets
+          repo: headless-assets
           route: /repos/{owner}/{repo}/contents/package.json?ref=v${{ inputs.version }}
         env:
           GITHUB_TOKEN: ${{ secrets.TRAVIS_GITHUB_TOKEN }}
@@ -141,7 +140,9 @@ jobs:
         run: jq '.require["ibexa/admin-ui-assets"] |= "${{ inputs.version }}"' composer.json | sponge composer.json
       - name: Patch parent version for Content
         if: github.event.repository.name == 'headless'
-        run: jq '.require["ibexa/oss"] |= "${{ inputs.version }}"' composer.json | sponge composer.json
+        run: |
+          jq '.require["ibexa/headless-assets"] |= "${{ inputs.version }}"' composer.json | sponge composer.json
+          jq '.require["ibexa/oss"] |= "${{ inputs.version }}"' composer.json | sponge composer.json
       - name: Patch parent version for Experience
         if: github.event.repository.name == 'experience'
         run: jq '.require["ibexa/headless"] |= "${{ inputs.version }}"' composer.json | sponge composer.json
