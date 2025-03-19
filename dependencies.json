@@ -1,0 +1,17 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx-9315-alt-text-automation as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/connector-openai",
+            "package": "ibexa/connector-openai",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-ibx-9315-ai-assistant-config as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/behat",
+            "package": "ibexa/behat",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}
