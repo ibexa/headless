@@ -28,6 +28,8 @@
         "ibexa/scheduler": "~5.0.x-dev",
         "ibexa/calendar": "~5.0.x-dev",
         "ibexa/connector-dam": "~5.0.x-dev",
+        "ibexa/connector-ai": "~5.0.x-dev",
+        "ibexa/connector-openai": "~5.0.x-dev",
         "ibexa/elasticsearch": "~5.0.x-dev",
         "ibexa/fastly": "~5.0.x-dev",
         "ibexa/icons": "~5.0.x-dev",
