@@ -17,6 +17,7 @@
     "require": {
         "php": ">=8.3",
         "ibexa/oss": "~5.0.x-dev",
+        "ibexa/collaboration": "~5.0.x-dev",
         "ibexa/connect": "~5.0.x-dev",
         "ibexa/measurement": "~5.0.x-dev",
         "ibexa/migrations": "~5.0.x-dev",
@@ -38,6 +39,7 @@
         "ibexa/tree-builder": "~5.0.x-dev",
         "ibexa/content-tree": "~5.0.x-dev",
         "ibexa/image-picker": "~5.0.x-dev",
+        "ibexa/share": "~5.0.x-dev",
         "ibexa/site-context": "~5.0.x-dev",
         "ibexa/headless-assets": "~5.0.0@alpha",
         "ibexa/app-switcher": "~5.0.x-dev",
