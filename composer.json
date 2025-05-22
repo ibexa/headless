@@ -25,6 +25,7 @@
         "ibexa/oauth2-client": "~5.0.x-dev",
         "ibexa/installer": "~5.0.x-dev",
         "ibexa/product-catalog": "~5.0.x-dev",
+        "ibexa/product-catalog-date-time-attribute": "~5.0.x-dev",
         "ibexa/seo": "~5.0.x-dev",
         "ibexa/scheduler": "~5.0.x-dev",
         "ibexa/calendar": "~5.0.x-dev",
