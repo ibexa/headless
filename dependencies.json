@@ -1,0 +1,23 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx-9960-behat-followup as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/connector-ai",
+            "package": "ibexa/connector-ai",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-ibx-9960-behat-followup as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/connector-openai",
+            "package": "ibexa/connector-openai",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-ibx-9960-ibx-9958-followup as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/behat",
+            "package": "ibexa/behat",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}
