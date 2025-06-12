@@ -47,9 +47,6 @@
         "ibexa/app-switcher": "~5.0.x-dev",
         "gregwar/captcha-bundle": "^2.1"
     },
-    "require-dev": {
-        "ibexa/ci-scripts": "^0.2@dev"
-    },
     "extra": {
         "branch-alias": {
             "dev-master": "5.0.x-dev"
