@@ -35,6 +35,7 @@
         "ibexa/connector-openai": "~5.0.x-dev",
         "ibexa/elasticsearch": "~5.0.x-dev",
         "ibexa/fastly": "~5.0.x-dev",
+        "ibexa/personalization": "~5.0.x-dev",
         "ibexa/version-comparison": "~5.0.x-dev",
         "ibexa/workflow": "~5.0.x-dev",
         "ibexa/taxonomy": "~5.0.x-dev",
