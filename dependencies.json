@@ -6,6 +6,12 @@
             "repositoryUrl": "https://github.com/ibexa/docker",
             "package": "ibexa/docker",
             "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-solr8-test as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/gh-workflows",
+            "package": "ibexa/gh-workflows",
+            "shouldBeAddedAsVCS": false
         }
     ]
 }
