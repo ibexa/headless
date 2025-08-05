@@ -1,4 +1,5 @@
 {
+    "recipesEndpoint": "",
     "packages": [
         {
             "requirement": "dev-solr8-upgrade as 5.0.x-dev",
