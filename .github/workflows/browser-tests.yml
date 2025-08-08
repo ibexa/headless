@@ -21,7 +21,7 @@ on:
 jobs:
     regression-headless-setup1:
         name: "PHP 7.4/Node 18/PostgreSQL 14.15/Varnish/Redis/Multirepository"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@solr8-test
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "headless"
             project-version: ${{ github.event.inputs.project-version }}
@@ -44,7 +44,7 @@ jobs:
             AUTOMATION_CLIENT_SECRET: ${{ secrets.AUTOMATION_CLIENT_SECRET }}
     regression-headless-setup2:
         name: "PHP 8.0/Node 20/MariaDB 10.11/Compatibility layer/Elastic"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@solr8-test
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "headless"
             project-version: ${{ github.event.inputs.project-version }}
@@ -66,8 +66,8 @@ jobs:
             AUTOMATION_CLIENT_INSTALLATION: ${{ secrets.AUTOMATION_CLIENT_INSTALLATION }}
             AUTOMATION_CLIENT_SECRET: ${{ secrets.AUTOMATION_CLIENT_SECRET }}
     regression-headless-setup3:
-        name: "PHP 8.3/Node 22/MySQL 8.4/Compatibility layer/Solr8"
-        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@solr8-test
+        name: "PHP 8.3/Node 22/MySQL 8.4/Compatibility layer/Solr 8"
+        uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "headless"
             project-version: ${{ github.event.inputs.project-version }}
