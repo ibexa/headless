@@ -41,7 +41,8 @@
         "ibexa/site-context": "~4.6.x-dev",
         "ibexa/headless-assets": "~4.6.0@alpha",
         "ibexa/app-switcher": "~4.6.x-dev",
-        "gregwar/captcha-bundle": "^2.1"
+        "gregwar/captcha-bundle": "^2.1",
+        "doctrine/orm": "2.20.6"
     },
     "require-dev": {
         "ibexa/ci-scripts": "^0.2@dev"
