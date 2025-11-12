@@ -1,0 +1,26 @@
+name: Scan Branch Regression Errors
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to scan (e.g., feature.ie-branch)'
+        required: true
+        type: string
+      since:
+        description: 'Start date (YYYY-MM-DD)'
+        required: false
+        type: string
+      until:
+        description: 'End date (YYYY-MM-DD)'
+        required: false
+        type: string
+
+jobs:
+  scan:
+    uses: ibexa/gh-workflows/.github/workflows/regression-summary.yml@copilot-regression-summary-poc
+    with:
+      branch: ${{ inputs.branch }}
+      since: ${{ inputs.since }}
+      until: ${{ inputs.until }}
+    secrets: inherit
