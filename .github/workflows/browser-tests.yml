@@ -34,6 +34,7 @@ jobs:
             php-image: "ghcr.io/ibexa/docker/php:7.4-node18"
             job-count: 2
             timeout: 90
+            ci-scripts-branch: "composer-json-array-fix"
         secrets: inherit
     regression-headless-setup2:
         name: "PHP 8.0/Node 20/MariaDB 10.11/Compatibility layer/Elastic"
