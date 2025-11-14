@@ -6,7 +6,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": [
-        {
+        {   "name": "ibexa",
             "type": "composer",
             "url": "https://updates.ibexa.co"
         }
