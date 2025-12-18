@@ -23,6 +23,7 @@ jobs:
         name: "PHP 8.3/Node 22/PostgreSQL 18.0/Varnish/Redis 7.2/Multirepository"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
+            ci-scripts-branch: 'poc-spi-latest'
             project-edition: "headless"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=headless"
@@ -36,30 +37,32 @@ jobs:
             timeout: 90
         secrets: inherit
     regression-headless-setup2:
-        name: "PHP 8.3/Node 22/MariaDB 11.4/Elastic"
+        name: "PHP 8.3/Node 22/MariaDB 11.4/Elastic/Valkey latest"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
+            ci-scripts-branch: 'poc-spi-latest'
             project-edition: "headless"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=headless"
             test-setup-phase-1: "--profile=regression --suite=setup-headless --tags=~@part2 --mode=standard"
             test-setup-phase-2: "--profile=regression --suite=setup-headless --tags=@part2 --mode=standard"
-            setup: "doc/docker/base-dev.yml:doc/docker/db-mariadb11.4.yml:doc/docker/elastic.yml:doc/docker/selenium.yml"
+            setup: "doc/docker/base-dev.yml:doc/docker/db-mariadb11.4.yml:doc/docker/elastic.yml:doc/docker/valkey-latest.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             php-image: "ghcr.io/ibexa/docker/php:8.3-node22"
             job-count: 2
             timeout: 90
         secrets: inherit
     regression-headless-setup3:
-        name: "PHP 8.3/Node 22/MySQL 8.4/Solr 8"
+        name: "PHP 8.3/Node 22/MySQL 8.4/Solr 8/Redis latest"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
+            ci-scripts-branch: 'poc-spi-latest'
             project-edition: "headless"
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=headless"
             test-setup-phase-1: "--profile=regression --suite=setup-headless --tags=~@part2 --mode=standard"
             test-setup-phase-2: "--profile=regression --suite=setup-headless --tags=@part2 --mode=standard"
-            setup: "doc/docker/base-dev.yml:doc/docker/db-mysql8.4.yml:doc/docker/solr8.yml:doc/docker/selenium.yml"
+            setup: "doc/docker/base-dev.yml:doc/docker/db-mysql8.4.yml:doc/docker/solr8.yml:doc/docker/redis-latest.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             php-image: "ghcr.io/ibexa/docker/php:8.3-node22"
             job-count: 2
