@@ -1,5 +1,5 @@
 {
-    "recipesEndpoint": "",
+    "recipesEndpoint": "https://api.github.com/repos/micszo/recipes-dev/contents/index.json?ref=flex/pull-2",
     "packages": [
         {
             "requirement": "dev-bump-dependencies as 4.6.x-dev",
