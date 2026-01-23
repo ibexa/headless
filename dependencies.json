@@ -24,6 +24,12 @@
             "repositoryUrl": "https://github.com/ibexa/connector-unsplash",
             "package": "ibexa/connector-unsplash",
             "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-ibx-10495-bump-ES-to-8 as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/oss",
+            "package": "ibexa/oss",
+            "shouldBeAddedAsVCS": false
         }
     ]
 }
