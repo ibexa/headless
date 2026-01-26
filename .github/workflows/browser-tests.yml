@@ -48,6 +48,7 @@ jobs:
             test-setup-phase-2: "--profile=regression --suite=setup-headless --tags=@part2 --mode=standard"
             setup: "doc/docker/base-dev.yml:doc/docker/db-mariadb11.4.yml:doc/docker/elastic8.yml:doc/docker/valkey-latest.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
+            use-compatibility-layer: true
             php-image: "ghcr.io/ibexa/docker/php:8.0-node20"
             job-count: 2
             timeout: 90
