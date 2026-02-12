@@ -1,0 +1,23 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-11089-taxo-suggestions as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-IBX-11089-taxo-suggestions as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/connector-ai",
+            "package": "ibexa/connector-ai",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-11089-taxo-suggestions as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/fieldtype-richtext",
+            "package": "ibexa/fieldtype-richtext",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}
