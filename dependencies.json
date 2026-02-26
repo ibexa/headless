@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-tmp_regression_69972f146ff744.78142138 as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/headless",
+            "package": "ibexa/headless",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}
