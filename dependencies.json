@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-bumped-league-uri as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/connector-anthropic",
+            "package": "ibexa/connector-anthropic",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}
