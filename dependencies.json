@@ -1,0 +1,35 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-11401-embedding-provider as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/connector-gemini",
+            "package": "ibexa/connector-gemini",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-IBX-11401-embedding-field-name as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/core",
+            "package": "ibexa/core",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-IBX-11401-gemini-embeddings as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/taxonomy",
+            "package": "ibexa/taxonomy",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-gemini-embedding-provider as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/solr",
+            "package": "ibexa/solr",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-gemini-embedding-provider as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/elasticsearch",
+            "package": "ibexa/elasticsearch",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}
