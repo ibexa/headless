@@ -1,0 +1,29 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-merge-up/ibx-11437-reference-aware-storage as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/admin-ui",
+            "package": "ibexa/admin-ui",
+            "shouldBeAddedAsVCS": false
+        },
+        {
+            "requirement": "dev-merge-up/ibx-11437-reference-aware-storage as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/fieldtype-page",
+            "package": "ibexa/fieldtype-page",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-merge-up/ibx-11437-reference-aware-storage as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/installer",
+            "package": "ibexa/installer",
+            "shouldBeAddedAsVCS": true
+        },
+        {
+            "requirement": "dev-merge-up/ibx-11437-reference-aware-storage as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/core",
+            "package": "ibexa/core",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}
