@@ -44,13 +44,13 @@
         "ibexa/image-picker": "~6.0.x-dev",
         "ibexa/share": "~6.0.x-dev",
         "ibexa/site-context": "~6.0.x-dev",
-        "ibexa/headless-assets": "~5.0.7@alpha",
+        "ibexa/headless-assets": "~6.0.0@alpha",
         "ibexa/app-switcher": "~6.0.x-dev",
         "gregwar/captcha-bundle": "^2.1"
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "5.0.x-dev"
+            "dev-master": "6.0.x-dev"
         }
     }
 }
