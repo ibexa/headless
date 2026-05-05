@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-ibx-11553-reponse-taggers-increased-verbosity as 5.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/http-cache",
+            "package": "ibexa/http-cache",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}
