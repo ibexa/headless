@@ -34,6 +34,7 @@ jobs:
             php-image: "ghcr.io/ibexa/docker/php:7.4-node18"
             job-count: 2
             timeout: 90
+            ci-scripts-branch: 'ibx-11717-fix-audit-ignore-for-twig'
         secrets: inherit
     regression-headless-setup2:
         name: "PHP 8.0/Node 20/MariaDB 11.4/Compatibility layer/Elastic 8/Valkey latest"
@@ -50,6 +51,7 @@ jobs:
             php-image: "ghcr.io/ibexa/docker/php:8.0-node20"
             job-count: 2
             timeout: 90
+            ci-scripts-branch: 'ibx-11717-fix-audit-ignore-for-twig'
         secrets: inherit
     regression-headless-setup3:
         name: "PHP 8.4/Node 22/MySQL 8.4/Compatibility layer/Solr 8/Redis latest"
@@ -66,4 +68,5 @@ jobs:
             php-image: "ghcr.io/ibexa/docker/php:8.4-node22"
             job-count: 2
             timeout: 90
+            ci-scripts-branch: 'ibx-11717-fix-audit-ignore-for-twig'
         secrets: inherit
