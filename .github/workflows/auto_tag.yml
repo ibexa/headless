@@ -20,6 +20,9 @@ on:
 jobs:
   preparation:
     runs-on: ubuntu-26.04
+    # This should allow parallel runs in a chain, e.g. OSS->Headless->Experience->Commerce
+    # whilst allowing Satis to process
+    timeout-minutes: 30
 
     steps:
       # No need to wait for the parent package (ibexa/oss) — it is available on Packagist, not via Satis
