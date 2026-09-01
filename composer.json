@@ -39,6 +39,7 @@
         "ibexa/version-comparison": "~6.0.x-dev",
         "ibexa/workflow": "~6.0.x-dev",
         "ibexa/taxonomy": "~6.0.x-dev",
+        "ibexa/translations-management": "~6.0.x-dev",
         "ibexa/tree-builder": "~6.0.x-dev",
         "ibexa/content-tree": "~6.0.x-dev",
         "ibexa/image-picker": "~6.0.x-dev",
