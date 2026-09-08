@@ -19,6 +19,7 @@
         "ibexa/oss": "~6.0.x-dev",
         "ibexa/collaboration": "~6.0.x-dev",
         "ibexa/connect": "~6.0.x-dev",
+        "ibexa/connector-ai-assistant": "~6.0.x-dev",
         "ibexa/measurement": "~6.0.x-dev",
         "ibexa/migrations": "~6.0.x-dev",
         "ibexa/image-editor": "~6.0.x-dev",
