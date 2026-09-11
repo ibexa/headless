@@ -36,6 +36,7 @@
         "ibexa/connector-openai": "~6.0.x-dev",
         "ibexa/elasticsearch": "~6.0.x-dev",
         "ibexa/fastly": "~6.0.x-dev",
+        "ibexa/mcp": "~6.0.x-dev",
         "ibexa/personalization": "~6.0.x-dev",
         "ibexa/version-comparison": "~6.0.x-dev",
         "ibexa/workflow": "~6.0.x-dev",
