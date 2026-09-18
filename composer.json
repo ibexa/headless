@@ -30,6 +30,7 @@
         "ibexa/product-catalog-symbol-attribute": "~6.0.x-dev",
         "ibexa/seo": "~6.0.x-dev",
         "ibexa/scheduler": "~6.0.x-dev",
+        "ibexa/admin-ui-extras": "~6.0.x-dev",
         "ibexa/calendar": "~6.0.x-dev",
         "ibexa/connector-dam": "~6.0.x-dev",
         "ibexa/connector-ai": "~6.0.x-dev",
