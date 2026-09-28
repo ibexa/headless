@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-12751-swagger-ui-provider-without-docs as 6.0.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/rest",
+            "package": "ibexa/rest",
+            "shouldBeAddedAsVCS": false
+        }
+    ]
+}
