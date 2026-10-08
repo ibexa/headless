@@ -1,0 +1,11 @@
+{
+    "recipesEndpoint": "",
+    "packages": [
+        {
+            "requirement": "dev-IBX-12165_When_successfully_authenticating_via_OAuth_the_default_page_configuration_setting_is_not_respected as 4.6.x-dev",
+            "repositoryUrl": "https://github.com/ibexa/oauth2-client",
+            "package": "ibexa/oauth2-client",
+            "shouldBeAddedAsVCS": true
+        }
+    ]
+}
