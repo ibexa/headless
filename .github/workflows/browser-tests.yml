@@ -51,7 +51,7 @@ jobs:
             timeout: 90
         secrets: inherit
     regression-headless-setup3:
-        name: "PHP 8.5/Node 22/MySQL 8.4/Solr 8/Redis latest"
+        name: "PHP 8.5/Node 22/MySQL 8.4/Solr 10/Redis latest"
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "headless"
@@ -59,7 +59,7 @@ jobs:
             test-suite: "--profile=regression --suite=headless"
             test-setup-phase-1: "--profile=regression --suite=setup-headless --tags=~@part2 --mode=standard"
             test-setup-phase-2: "--profile=regression --suite=setup-headless --tags=@part2 --mode=standard"
-            setup: "doc/docker/base-dev.yml:doc/docker/db-mysql8.4.yml:doc/docker/solr8.yml:doc/docker/redis-latest.yml:doc/docker/selenium.yml"
+            setup: "doc/docker/base-dev.yml:doc/docker/db-mysql8.4.yml:doc/docker/solr10.yml:doc/docker/redis-latest.yml:doc/docker/selenium.yml"
             send-success-notification: ${{ github.event.inputs.send-success-notification != 'false' }}
             php-image: 'ghcr.io/ibexa/docker/php:8.5-node22'
             job-count: 2
