@@ -24,6 +24,7 @@ jobs:
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "headless"
+            ci-scripts-branch: 'IBX-13065-alias-tested-package-to-next-branch'
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=headless"
             test-setup-phase-1: "--profile=regression --suite=setup-headless --tags=~@part2 --mode=standard"
@@ -40,6 +41,7 @@ jobs:
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "headless"
+            ci-scripts-branch: 'IBX-13065-alias-tested-package-to-next-branch'
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=headless"
             test-setup-phase-1: "--profile=regression --suite=setup-headless --tags=~@part2 --mode=standard"
@@ -55,6 +57,7 @@ jobs:
         uses: ibexa/gh-workflows/.github/workflows/browser-tests.yml@main
         with:
             project-edition: "headless"
+            ci-scripts-branch: 'IBX-13065-alias-tested-package-to-next-branch'
             project-version: ${{ github.event.inputs.project-version }}
             test-suite: "--profile=regression --suite=headless"
             test-setup-phase-1: "--profile=regression --suite=setup-headless --tags=~@part2 --mode=standard"
