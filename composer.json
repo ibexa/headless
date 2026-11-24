@@ -18,7 +18,6 @@
         "php": ">=8.5",
         "ibexa/oss": "~6.0.x-dev",
         "ibexa/api-platform": "~6.0.x-dev",
-        "ibexa/collaboration": "~6.0.x-dev",
         "ibexa/connect": "~6.0.x-dev",
         "ibexa/connector-ai-assistant": "dev-6.0-next",
         "ibexa/measurement": "~6.0.x-dev",
